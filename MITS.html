@@ -1,0 +1,701 @@
+<html>
+  <head>
+    <title>STEM</title>
+    <link rel="styleshet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css""
+    />
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      /*background-image: url("STEM2.jpg");*/
+      background-size: cover;
+      background-position: center;
+
+      font-family: sans-serif;
+    }
+    .menu-bar {
+      background: rgb(32, 165, 120);
+      text-align: center;
+    }
+    .menu-bar ul {
+      display: inline-flex;
+      list-style: none;
+      color: azure;
+    }
+    .menu-bar ul li {
+      width: 120px;
+      margin: 15px;
+      padding: 15px;
+    }
+    .menu-bar ul li a {
+      text-decoration: none;
+      color: azure;
+    }
+    .active {
+      background: rgb(76, 199, 117);
+      border-radius: 3px;
+    }
+  /*.menu-bar .fa {
+    }*/
+    .sub-menu-1 {
+      display: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 {
+      display: block;
+      position: absolute;
+      background: rgb(32, 165, 120);
+      margin-top: 15px;
+      margin-left: -15px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul {
+      display: block;
+      margin: 10px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li {
+      width: 150px;
+      padding: 10px;
+      border-bottom: 1px double rgb(76, 199, 117);
+      border-radius: 0;
+      text-align: left;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+      border-bottom: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li a :hover {
+      color: rgb(115, 223, 151);
+    }
+    .sub-menu-2 {
+        display: none;
+    }
+    .hover-me:hover .sub-menu-2 {
+        position: absolute;
+        display: block;
+        margin-top: -40px;
+        margin-left: 140px;
+        background: rgb(115, 223, 151);
+    }
+    
+    .logo {
+        margin-inline-start: auto;
+    }
+    .header {
+        margin: auto;
+        color: seashell;
+        
+        text-align: center;
+        font-size: larger;
+        padding-top: 150px;
+    }
+  /*  .stem {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.stem td, .stem th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.stem tr:nth-child(even){background-color: #f2f2f2;}
+
+.stem tr:hover {background-color: #ddd;}
+
+.stem th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}*/ .container {
+        background: rgb(115, 223, 151);
+    
+    background-size: cover;
+}
+    .header {
+        align-items: center;
+        margin: 0;
+        color: rgb(2, 2, 2);
+        
+        text-align: center;
+        font-size: larger;
+        padding-top: 0;
+
+    }
+    /*.table {
+        font-size: medium;
+        font-family: sans-serif;
+        margin: auto;
+        padding: auto;
+        align-items: center;
+        
+        
+       
+    }
+
+    .table.table-bordered{
+    border-collapse: collapse;
+        margin-top:20px;
+  	}
+	table.table-bordered > thead > tr > th{
+        border:1px solid rgb(0, 0, 0);
+	}
+	.table.table-bordered > tbody > tr > td{
+        border:1px solid rgb(0, 0, 0);
+	}*/
+  .table {
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+}
+
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+  </style>
+
+  <body>
+    <div class="menu-bar">
+      <ul>
+        <img class="logo">
+        <img href=" https://www.neduet.edu.pk/" src="images/NED logo.png" alt="logo">
+        
+        <li class="active">
+          <a href="index.html"><i class="fa fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="tutorial.html"><i class="fa fa-home"></i>Tutorial Videos</a>
+          </li>
+
+        <li>
+          <a href="#"><i class="fa fa-home"></i>Basic Block Coding</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <li class="hover-me"><a href="Units.html">MIT</a>
+                </li>
+                <li class="hover-me"><a href="Units.html">Units</a>
+                  <div class="sub-menu-2">
+                    <ul>
+                      <li>
+                        <a href="#table1">Unit 1-5</a>
+                        <a href="#table2">Unit 6-10</a>
+                        <a href="#table3">Unit 11-15</a>
+
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-home"></i>App Development</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <li class="hover-me"><a href="#">Units</a>
+                </li>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-right"></i>Units</a>
+                          </li>
+                          
+                    </ul>
+                </div>
+              </li>
+              <li><a href="#">Tutorial</a></li>
+              <div class="sub-menu-2">
+                <ul>
+                    <li>
+                        <a href="#">units</a>
+                      </li>
+                </ul>
+            </div>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="interim_curriculum.html"><i class="fa fa-home"></i>Previous Curriculum</a>
+        </li>
+      </ul>
+    </div>
+    
+    
+      <div class="table" id="table" role="tabpanel" aria-labelledby="gamedev-tab">
+        <div class="container">
+            <header><div class="header">
+                <h1>Basic Block Coding</h1></header></div>
+            
+            <table class="table caption-top table-bordered">
+                
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">Number</th>
+                    <th scope="col">Units</th>
+                    <th scope="col">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" rowspan="2">1</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/stage/3/puzzle/1">App</a></td>
+                  </tr>
+                
+                  <tr>
+                    <td>Task</td>
+                    <td><a href="https://youtu.be/h7NtxHTrqgU"><span class="task"></span>Here</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <th scope="row" >2</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/stage/3/puzzle/2">App</a></td>
+                  </tr>
+                  
+                  
+
+                  <tr>
+                    <th scope="row" rowspan="2">3</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/stage/3/puzzle/4">App</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Task</td>
+                    <td><a href="https://studio.code.org/s/course2/lessons/3/levels/3">Here</a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row" >4</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/stage/3/puzzle/4">App</a></td>
+                  </tr>
+                  
+
+
+                  <tr>
+                    <th scope="row" >5</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/stage/3/puzzle/7">App</a></td>
+                  </tr>
+                  
+                  
+                  <tr>
+                    <th scope="row" >6</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/stage/3/puzzle/8">App</a></td>
+                  </tr>
+                  
+
+
+                  <tr>
+                    <th scope="row"  >7</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/stage/3/puzzle/11">App</a></td>
+                  </tr>
+                  
+
+                  <tr>
+                    <th scope="row" rowspan="2">8</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/lessons/6/levels/2">App</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Task</td>
+                    <td><a href="https://studio.code.org/s/course2/stage/3/extras?id=73918">Here</a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row" >9</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/stage/3/extras?id=73919">App</a></td>
+                  </tr>
+                  
+
+                  <tr>
+                    <th scope="row" >10</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/lessons/6/levels/6?id=73919">App</a></td>
+                  </tr>
+                  
+
+                  <tr>
+                    <th scope="row" rowspan="2">11</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/lessons/4/levels/1">App</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Task</td>
+                    <td><a href="https://studio.code.org/s/course2/lessons/4/levels/2">Here</a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row" rowspan="2">12</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/stage/4/puzzle/3">App</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Task</td>
+                    <td><a href="https://studio.code.org/s/course2/lessons/4/levels/5">Here</a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row" rowspan="2">13</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/stage/4/puzzle/7">App</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Task</td>
+                    <td><a href="https://studio.code.org/s/course2/lessons/4/levels/9">Here</a></td>
+                  </tr>
+
+
+                  <tr>
+                    <th scope="row" >14</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/stage/4/puzzle/10">App</a></td>
+                  </tr>
+                  
+
+                  <tr>
+                    <th scope="row" rowspan="3">15</th>
+                    <td>Procedure</td>
+                    <td><a href="https://studio.code.org/s/course2/lessons/17/levels/5?id=73919">App</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Project1</td>
+                    <td><a href="https://code.org/minecraft">App</a></td>
+                  </tr>
+                  <tr>
+                    <td>Project 2: Scratch Website</td>
+                    <td><a href="scratch.mit.edu">App</a></td>
+                  </tr>
+
+                  <!--tr>
+                    <th scope="row" rowspan="2">Get to know Code.org</th>
+                    <td scope="row" rowspan="2">Useful Links</td>
+                    <td><a href="https://code.org/athome/project-ideas">Website tutorial</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://support.code.org/hc/en-us/articles/115001554911-Configuring-sharing-options-for-students-using-App-Lab-Game-Lab-and-Web-Lab">Website tutorial 2</a></td>
+                  </tr-->
+
+                  
+
+                  <tr>
+                    <th scope="row" rowspan="2">16</th>
+                    <td>Procedure</td>
+                    <td><a href="https://scratch.mit.edu/">App</a></td>
+                  </tr>
+                  
+                    <td>Task</td>
+                    <td><a href="https://drive.google.com/file/d/1ud8ctiVXVh1T8KVNkqr6mHlGivZnpmPF/view?usp=sharing">here</a></td>
+                  </tr>
+
+
+                  <tr>
+                    <th scope="row" >17</th>
+                    <td>Procedure</td>
+                    <td><a href="https://scratch.mit.edu/">App</a></td>
+                  </tr>
+                 
+
+                  <tr>
+                    <th scope="row" >18</th>
+                    <td>Procedure</td>
+                    <td><a href="https://scratch.mit.edu/projects/491521126/editor">App</a></td>
+                  </tr>
+                 
+
+                  <tr>
+                    <th scope="row" rowspan="2">19</th>
+                    <td>Procedure</td>
+                    <td><a href="https://scratch.mit.edu/studios/28751336/">App</a></td>
+                  </tr>
+                  <tr>
+                    <td>Project 3</td>
+                    <td><a href="https://scratch.mit.edu/projects/491030360/editor">Here</a></td>
+                  </tr>
+
+                </tbody>
+              </table>	
+          </div>
+
+<!--App Development<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="appdev-tab">
+
+				<div class="container">
+					<table class="table caption-top table-bordered">
+						<h1 class="display-5">APP DEVELOPMENT</h1>
+						<thead class="table-dark">
+						  <tr>
+							<th scope="col">Unit #</th>
+							<th scope="col">Context</th>
+							<th scope="col">Description</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<th scope="row" rowspan="2">Get started with Code.Org</th>
+							<td>Procedure</td>
+							<td><a href="code.org">Code.org</a></td>
+						  </tr>
+						  <tr>
+							<td>Tutorial Video</td>
+							<td><a href="https://youtu.be/LnUyPQXXuYo">Tutorial for uploading App on your phone/tablet</a></td>
+						  </tr>
+						  
+						  <tr>
+							<th scope="row" rowspan="2">1</th>
+							<td scope="row" rowspan="2">Procedure</td>
+							<td><a href="https://studio.code.org/s/applab-intro/stage/1/puzzle/2"><span class="openapp"></span></a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1o6dPr95hSxhYO5nf-TpsC9hDUizrrglz/view">How to change the color</a></td>
+						  </tr>
+
+						  <tr>
+							<th scope="row" rowspan="2">2</th>
+							<td>Procedure</td>
+							<td><a href="https://studio.code.org/s/applab-intro/stage/1/puzzle/3"><span class="openapp"></span></a></td>
+						  </tr>
+						  <tr>
+							<td>Tutorial Video</td>
+							<td><a href="https://drive.google.com/file/d/1b60GP3fmXkENQNcJi8FrK-7ql91Sfrkm/view"><span class="tutorial"></span></a></td>
+						  </tr>
+
+						  <tr>
+							<th scope="row" rowspan="2">3</th>
+							<td>Procedure</td>
+							<td><a href="https://studio.code.org/s/applab-intro/stage/1/puzzle/4"><span class="openapp"></span></a></td>
+						  </tr>
+						  <tr>
+							<td>Tutorial Video</td>
+							<td><a href="https://drive.google.com/file/d/14CosvyIZWxId7M2dgLniUAKtCshIsS7_/view"><span class="tutorial"></span></a></td>
+						  </tr>
+
+
+						  <tr>
+							<th scope="row" rowspan="3">4</th>
+							<td scope="row" rowspan="2">Procedure</td>
+							<td><a href="https://youtu.be/fypSGGZZfzM">Tutorial of how to make app more attractive</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://studio.code.org/s/applab-intro/stage/1/puzzle/6"><span class="openapp"></span></a></td>
+						  </tr>
+						  <tr>
+							<td>Tutorial Video</td>
+							<td><a href="https://drive.google.com/file/d/1D9ZPNRf0zP1elV9fAN_KJMK3xGcZ0JRF/view"><span class="tutorial"></span></a></td>
+						  </tr>
+
+						  
+						  <tr>
+							<th scope="row" rowspan="2">5</th>
+							<td>Procedure</td>
+							<td><a href="https://studio.code.org/s/applab-intro/stage/1/puzzle/7"><span class="openapp"></span></a></td>
+						  </tr>
+						  <tr>
+							<td>Tutorial Video</td>
+							<td><a href="https://drive.google.com/file/d/1lvkneJ1b79ZMaOBY3timWAeJ05Un9qbS/view"><span class="tutorial"></span></a></td>
+						  </tr>
+
+
+						  <tr>
+							<th scope="row" rowspan="2" align="center">6</th>
+							<td scope="row" rowspan="2">Procedure</td>
+							<td><a href="https://studio.code.org/s/applab-intro/lessons/1/levels/8">Tutorial of Adding Media to App</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://studio.code.org/s/applab-intro/lessons/1/levels/9"><span class="openapp"></span></a></td>
+						  </tr>
+
+						  <tr>
+							<th scope="row" rowspan="3">7</th>
+							<td scope="row" rowspan="2">Procedure</td>
+							<td><a href="https://studio.code.org/s/applab-intro/lessons/1/levels/10">Learn About Design Mode</span></a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://studio.code.org/s/applab-intro/stage/1/puzzle/11"><span class="openapp"></span></a></td>
+						  </tr>
+						  <tr>
+							<td>Tutorial Video</td>
+							<td><a href="https://drive.google.com/file/d/1VWmZY6ik3euL1JAySxbwSKJi3WJP3agA/view"><span class="tutorial"></span></a></td>
+						  </tr>
+
+						  <tr>
+							<th scope="row" rowspan="3">8</th>
+							<td>Explanation</td>
+							<td><a href="https://studio.code.org/s/applab-intro/lessons/1/levels/14">Video: How to share project with others</a></td>
+						  </tr>
+						  <tr>
+							<td scope="row" rowspan="2">Procedure</td>
+							<td><a href="https://studio.code.org/s/applab-intro/stage/1/puzzle/12">How to make app more attractive 1</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://studio.code.org/s/applab-intro/stage/1/puzzle/13">How to make app more attractive 2</a></td>
+						  </tr>
+
+						  <tr>
+							<th scope="row" rowspan="2">9</th>
+							<td>Procedure</td>
+							<td><a href="https://studio.code.org/projects/public"><span class="openapp"></span></a></td>
+						  </tr>
+						  <tr>
+							<td>Tutorial Video</td>
+							<td><a href="https://drive.google.com/file/d/1jpPZVZwq7uSuF4h50oriSWO-jhdbNBhd/view"><span class="tutorial"></span></a></td>
+						  </tr>
+
+						  <tr>
+							<th scope="row" rowspan="1">Project 2: Getting Started with MIT APP INVENTOR</th>
+							<td>Procedure</td>
+							<td><a href="https://appinventor.mit.edu/">Link for MIT app inventor</a></td>
+						  </tr>
+						  
+						  <tr>
+							<th scope="row" rowspan="5">10</th>
+							<td>Procedure</td>
+							<td><a href="http://ai2.appinventor.mit.edu"><span class="openapp"></span></a></td>
+						  </tr>
+						  <tr>
+							<td scope="row" rowspan="4">Tutorial Video</td>
+							<td><a href="https://drive.google.com/file/d/12HPEjzKI8a7X5SrgdbGAIIe2sFyuMnsc/view">Starting with MIT app inventor</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1YuSoEjmI9RXkepuaKo40-iJtfGBKh9c-/view">How to Design Screen</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/13QrtL7zSn7pLjLnkZ8jqb0CpYEyh0chC/view">How to do block coding</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/16fCfZhhQC3S1iIcUbz_dMNN_VLn6Oxba/view">Complete Working</a></td>
+						  </tr>
+
+						  <tr>
+							<th scope="row" rowspan="5">11</th>
+							<td>Procedure</td>
+							<td><a href="http://ai2.appinventor.mit.edu"><span class="openapp"></span></a></td>
+						  </tr>
+						  <tr>
+							<td scope="row" rowspan="4">Tutorial Video</td>
+							<td><a href="https://drive.google.com/file/d/12HPEjzKI8a7X5SrgdbGAIIe2sFyuMnsc/view">Starting with MIT app inventor</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1dr4EIwptxb1fmKk92NtA1dZs3wPcvjdQ/view">How to Design Screen</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1QmHr4bMctW0pbgt9PvehdSwlav5J4r__/view">How to do block coding</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1SHjuslJrdtyELwAErlpRA-mL2YxytdSA/view">Complete Working</a></td>
+						  </tr>
+
+						  <tr>
+							<th scope="row" rowspan="5">12</th>
+							<td>Procedure</td>
+							<td><a href="https://appinventor.mit.edu/"><span class="openappinv"></span></a></td>
+						  </tr>
+						  <tr>
+							<td scope="row" rowspan="4">Tutorial Video</td>
+							<td><a href="https://drive.google.com/file/d/12HPEjzKI8a7X5SrgdbGAIIe2sFyuMnsc/view">Starting with MIT app inventor</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1LOJi2HgKZnBx53CA8X7uyWOQMND7tpWq/view">How to Design Screen</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1kME77gpDuvWurYiUSLJNhoUVdIrZ-N2P/view">How to do block coding</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1rGhJ9Y46mmsIYdX2TFG4k80yTmLgUv-t/view">Complete Working</a></td>
+						  </tr>
+
+
+						  <tr>
+							<th scope="row" rowspan="5">13</th>
+							<td>Procedure</td>
+							<td><a href="https://appinventor.mit.edu/"><span class="openappinv"></span></a></td>
+						  </tr>
+						  <tr>
+							<td scope="row" rowspan="4">Tutorial Video</td>
+							<td><a href="https://drive.google.com/file/d/12HPEjzKI8a7X5SrgdbGAIIe2sFyuMnsc/view">Starting with MIT app inventor</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1yRbpdyoIAySqtIM0YARQM3A4HmsWC5L4/view">How to Design Screen</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1FajLRkGAd_tishrKB3goxCb-l7lzMtvP/view">How to do block coding</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1pt16zfQ1c7WglBhqn5enMhfZ1V1M6Zp9/view">Complete Working</a></td>
+						  </tr>
+
+
+						  <tr>
+							<th scope="row" rowspan="3">14</th>
+							<td>Procedure</td>
+							<td><a href="https://appinventor.mit.edu/"><span class="openappinv"></span></a></td>
+						  </tr>
+						  <tr>
+							<td scope="row" rowspan="2">Tutorial Video</td>
+							<td><a href="https://drive.google.com/file/d/1lYAg9BY9AOmV9QPxg-GycvJE0DDuv9v6/view">Design and Code Block</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1sVfZJk7BHih6vhyfp2an4UI1xy1g5KaV/view">Complete Working</a></td>
+						  </tr>
+
+
+
+						  <tr>
+							<th scope="row" rowspan="4">15</th>
+							<td>Procedure</td>
+							<td><a href="https://appinventor.mit.edu/"><span class="openappinv"></span></a></td>
+						  </tr>
+						  <tr>
+							<td scope="row" rowspan="3">Tutorial Video</td>
+							<td><a href="https://drive.google.com/file/d/1buizttkfttb8PR8DtoF5g-8EpfvHv32F/view">Design and Code Block video 1</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1huu7zUulslKnrBsQE4uGXL-h8yMPrfsa/view">Design and Code Block video 2</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1HDZR9DoQ_Z5urZPoTavD5vEvDLEYWTRE/view">Complete Working</a></td>
+						  </tr>
+
+
+						</tbody>
+					  </table>	
+				  </div>			
+
+
+			</div-->
+
+
+  </body>
+</html>

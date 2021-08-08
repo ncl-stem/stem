@@ -1,0 +1,451 @@
+<html>
+  <head>
+    <title>STEM</title>
+    <link rel="styleshet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css""
+    />
+  </head>
+  
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: azure;
+      background-size: cover;
+      background-position: center;
+
+      font-family: sans-serif;
+    }
+    .menu-bar {
+      background: rgb(32, 165, 120);
+      text-align: center;
+    }
+    .menu-bar ul {
+      display: inline-flex;
+      list-style: none;
+      color: azure;
+    }
+    .menu-bar ul li {
+      width: 120px;
+      margin: 15px;
+      padding: 15px;
+    }
+    .menu-bar ul li a {
+      text-decoration: none;
+      color: azure;
+    }
+    .active {
+      background: rgb(76, 199, 117);
+      border-radius: 3px;
+    }
+  /*.menu-bar .fa {
+    }*/
+    .sub-menu-1 {
+      display: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 {
+      display: block;
+      position: absolute;
+      background: rgb(32, 165, 120);
+      margin-top: 15px;
+      margin-left: -15px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul {
+      display: block;
+      margin: 10px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li {
+      width: 150px;
+      padding: 10px;
+      border-bottom: 1px double rgb(76, 199, 117);
+      border-radius: 0;
+      text-align: left;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+      border-bottom: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li a :hover {
+      color: rgb(115, 223, 151);
+    }
+    .sub-menu-2 {
+        display: none;
+    }
+    .hover-me:hover .sub-menu-2 {
+        position: absolute;
+        display: block;
+        margin-top: -40px;
+        margin-left: 140px;
+        background: rgb(115, 223, 151);
+    }
+    
+    .logo {
+        margin-inline-start: auto;
+    }
+    .header {
+        margin: auto;
+        color: seashell;
+        
+        text-align: center;
+        font-size: larger;
+        padding-top: 150px;
+    }
+    .container {
+        background: rgb(245, 245, 245);
+        background-size: cover;
+}
+    .header {
+        align-items: center;
+        margin: 0;
+        color: rgb(2, 2, 2);
+        
+        text-align: center;
+        font-size: larger;
+        padding-top: 0;
+
+    }
+    /*.table-1 {
+        font-size: medium;
+        font-family: sans-serif;
+        margin: auto;
+        padding: auto;
+        align-items: center;
+        border-color: black;
+        border-style: solid;
+        
+       
+    }
+
+    .table-1.table-1-bordered{
+        border: 1px solid black;
+        margin-top:20px;
+  	}
+	.table-1.table-1-bordered > thead > tr > th{
+        border:1px solid rgb(0, 0, 0);
+        
+	}
+	.table-1.table-1-bordered > tbody > tr > td{
+        border:1px solid rgb(0, 0, 0);
+	}*/
+    .table-1 {
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+}
+
+.table-1 td, .table-1 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-1 tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-1 tr:hover {background-color: #ddd;}
+
+.table-1 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+  </style>
+  
+
+  
+    <div class="menu-bar">
+      <ul>
+        <img class="logo">
+        <img href=" https://www.neduet.edu.pk/" src="images/NED logo.png" alt="logo">
+        
+        <li class="active">
+          <a href="index.html"><i class="fa fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="tutorial.html"><i class="fa fa-home"></i>Tutorial Videos</a>
+          </li>
+
+        <li>
+          <a href="#"><i class="fa fa-home"></i>Basic Block Coding</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <li class="hover-me"><a href="MITS.html">MIT</a>
+                </li>
+                <li class="hover-me"><a href="units.html">Units</a>
+                  <div class="sub-menu-2">
+                    <ul>
+                      <li>
+                        <a href="#table1">Unit 1-5</a>
+                        <a href="#table2">Unit 6-10</a>
+                        <a href="#table3">Unit 11-15</a>
+
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-home"></i>App Development</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <li class="hover-me"><a href="#">Units</a>
+                </li>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-right"></i>Units</a>
+                          </li>
+                          
+                    </ul>
+                </div>
+              </li>
+              <li><a href="#">Tutorial</a></li>
+              <div class="sub-menu-2">
+                <ul>
+                    <li>
+                        <a href="#">units</a>
+                      </li>
+                      
+                </ul>
+            </div>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="interim_curriculum.html"><i class="fa fa-home"></i>Presvious Curriculm</a>
+        </li>
+      </ul>
+    </div>
+    <body>
+        <!--Unit 1-5-->
+        <header>
+            <div class="header">
+                <h1> Basic Block Coding Unit 1 - 5</h1>
+            </div>
+            
+    
+        </header>
+        <div class="table-1" id="table1"  role="tabpanel" aria-labelledby="gamedev-tab">
+            <div class="container">
+                <!--header><div class="header">
+                    <h1>Basic Block Coding</h1></header></div-->
+                
+                <table class="table caption-top table-bordered">
+                    
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">Number</th>
+                        <th scope="col">Units</th>
+                        <th scope="col">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" rowspan="2">1</th>
+                        <td>Procedure</td>
+                        <td><a href="https://studio.code.org/s/course2/stage/3/puzzle/1">App</a></td>
+                      </tr>
+                    
+                      <tr>
+                        <td>Task</td>
+                        <td><a href="https://youtu.be/h7NtxHTrqgU"><span class="task"></span>Here</a></td>
+                      </tr>
+                      
+                      <tr>
+                        <th scope="row" >2</th>
+                        <td>Procedure</td>
+                        <td><a href="https://studio.code.org/s/course2/stage/3/puzzle/2">App</a></td>
+                      </tr>
+                      
+                      
+    
+                      <tr>
+                        <th scope="row" rowspan="2">3</th>
+                        <td>Procedure</td>
+                        <td><a href="https://studio.code.org/s/course2/stage/3/puzzle/4">App</a></td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Task</td>
+                        <td><a href="https://studio.code.org/s/course2/lessons/3/levels/3">Here</a></td>
+                      </tr>
+    
+                      <tr>
+                        <th scope="row" >4</th>
+                        <td>Procedure</td>
+                        <td><a href="https://studio.code.org/s/course2/stage/3/puzzle/4">App</a></td>
+                      </tr>
+                      
+    
+    
+                      <tr>
+                        <th scope="row" >5</th>
+                        <td>Procedure</td>
+                        <td><a href="https://studio.code.org/s/course2/stage/3/puzzle/7">App</a></td>
+                      </tr>
+                    </tbody>
+
+                </table>	
+            </div>
+        </div>
+
+        <header>
+            <div class="header">
+                <h1> Basic Block Coding Unit 6-10</h1>
+            </div>
+            
+    
+        </header>
+        <div class="table-1" id="table2"  role="tabpanel" aria-labelledby="gamedev-tab">
+            <div class="container">
+                
+                        <!--header><div class="header">
+                            <h1>Basic Block Coding</h1></header></div-->
+                        
+                        <table class="table caption-top table-bordered">
+                            
+                            <thead class="table-dark">
+                              <tr>
+                                <th scope="col">Number</th>
+                                <th scope="col">Units</th>
+                                <th scope="col">Description</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" >6</th>
+                                    <td>Procedure</td>
+                                    <td><a href="https://studio.code.org/s/course2/stage/3/puzzle/8">App</a></td>
+                                  </tr>
+                                  
+                
+                
+                                  <tr>
+                                    <th scope="row"  >7</th>
+                                    <td>Procedure</td>
+                                    <td><a href="https://studio.code.org/s/course2/stage/3/puzzle/11">App</a></td>
+                                  </tr>
+                                  
+                
+                                  <tr>
+                                    <th scope="row" rowspan="2">8</th>
+                                    <td>Procedure</td>
+                                    <td><a href="https://studio.code.org/s/course2/lessons/6/levels/2">App</a></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td>Task</td>
+                                    <td><a href="https://studio.code.org/s/course2/stage/3/extras?id=73918">Here</a></td>
+                                  </tr>
+                
+                                  <tr>
+                                    <th scope="row" >9</th>
+                                    <td>Procedure</td>
+                                    <td><a href="https://studio.code.org/s/course2/stage/3/extras?id=73919">App</a></td>
+                                  </tr>
+                                  
+                
+                                  <tr>
+                                    <th scope="row" >10</th>
+                                    <td>Procedure</td>
+                                    <td><a href="https://studio.code.org/s/course2/lessons/6/levels/6?id=73919">App</a></td>
+                                  </tr>
+                            </tbody>
+
+                        </table>	
+                    </div>
+                </div>
+                <header>
+                    <div class="header">
+                        <h1> Basic Block Coding Unit 11-15</h1>
+                    </div>
+                    
+            
+                </header>
+                <div class="table-1" id="table3"  role="tabpanel" aria-labelledby="gamedev-tab">
+                    <div class="container">
+                        
+                                <!--header><div class="header">
+                                    <h1>Basic Block Coding</h1></header></div-->
+                                
+                                <table class="table caption-top table-bordered">
+                                    
+                                    <thead class="table-dark">
+                                      <tr>
+                                        <th scope="col">Number</th>
+                                        <th scope="col">Units</th>
+                                        <th scope="col">Description</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                    <tr>
+                                        <th scope="row" rowspan="2">11</th>
+                                        <td>Procedure</td>
+                                        <td><a href="https://studio.code.org/s/course2/lessons/4/levels/1">App</a></td>
+                                      </tr>
+                                      
+                                      <tr>
+                                        <td>Task</td>
+                                        <td><a href="https://studio.code.org/s/course2/lessons/4/levels/2">Here</a></td>
+                                      </tr>
+                    
+                                      <tr>
+                                        <th scope="row" rowspan="2">12</th>
+                                        <td>Procedure</td>
+                                        <td><a href="https://studio.code.org/s/course2/stage/4/puzzle/3">App</a></td>
+                                      </tr>
+                                      
+                                      <tr>
+                                        <td>Task</td>
+                                        <td><a href="https://studio.code.org/s/course2/lessons/4/levels/5">Here</a></td>
+                                      </tr>
+                    
+                                      <tr>
+                                        <th scope="row" rowspan="2">13</th>
+                                        <td>Procedure</td>
+                                        <td><a href="https://studio.code.org/s/course2/stage/4/puzzle/7">App</a></td>
+                                      </tr>
+                                      
+                                      <tr>
+                                        <td>Task</td>
+                                        <td><a href="https://studio.code.org/s/course2/lessons/4/levels/9">Here</a></td>
+                                      </tr>
+                    
+                    
+                                      <tr>
+                                        <th scope="row" >14</th>
+                                        <td>Procedure</td>
+                                        <td><a href="https://studio.code.org/s/course2/stage/4/puzzle/10">App</a></td>
+                                      </tr>
+                                      
+                    
+                                      <tr>
+                                        <th scope="row" rowspan="3">15</th>
+                                        <td>Procedure</td>
+                                        <td><a href="https://studio.code.org/s/course2/lessons/17/levels/5?id=73919">App</a></td>
+                                      </tr>
+                                      
+                                      <tr>
+                                        <td>Project1</td>
+                                        <td><a href="https://code.org/minecraft">App</a></td>
+                                      </tr>
+                                      <tr>
+                                        <td>Project 2: Scratch Website</td>
+                                        <td><a href="scratch.mit.edu">App</a></td>
+                                      </tr>
+                    
+                                </table>	
+                            </div>
+                        </div>
+  </body>
+</html>
