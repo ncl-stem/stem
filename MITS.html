@@ -1,0 +1,353 @@
+<html>
+  <head>
+    <!--script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script-->
+    <title>MITS</title>
+    
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      
+      background-size: cover;
+      background-position: center;
+
+      font-family: sans-serif;
+    }
+    
+    .menu-bar {
+      background: rgb(32, 165, 120);
+      text-align: center;
+    }
+    .menu-bar .logo{
+      margin: auto;
+      padding-top: auto;
+    }
+    .menu-bar ul {
+      display: inline-flex;
+      list-style: none;
+      color: azure;
+    }
+    .menu-bar ul li {
+      width: 120px;
+      margin: 15px;
+      padding: 15px;
+    }
+    .menu-bar ul li a {
+      text-decoration: none;
+      color: azure;
+    }
+    .active {
+      background: rgb(76, 199, 117);
+      border-radius: 3px;
+    }
+  /*.menu-bar .fa {
+    }*/
+    .sub-menu-1 {
+      display: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 {
+      display: block;
+      position: absolute;
+      background: rgb(32, 165, 120);
+      margin-top: 15px;
+      margin-left: -15px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul {
+      display: block;
+      margin: 10px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li {
+      width: 150px;
+      padding: 10px;
+      border-bottom: 1px double rgb(76, 199, 117);
+      border-radius: 0;
+      text-align: left;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+      border-bottom: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li a :hover {
+      color: rgb(115, 223, 151);
+      text-align: center;
+    }
+    .sub-menu-2 {
+        display: none;
+    }
+    .hover-me:hover .sub-menu-2 {
+        position: absolute;
+        display: block;
+        margin-top: -40px;
+        margin-left: 140px;
+        background: rgb(115, 223, 151);
+    }
+    .container {
+        background: rgb(249, 250, 249);
+    
+    background-size: cover;
+}
+    .header {
+        text-align: center;
+        
+        margin: 0;
+        color: rgb(2, 2, 2);
+        
+        text-align: center;
+        font-size: larger;
+        padding-top: 0;}
+    .table {
+        width: 800px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+}
+
+.table td, .table th {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 8px;
+  text-align: center
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+    </style>
+    <body>
+    
+        <div class="menu-bar">
+            <ul>
+              <img class="logo">
+              
+              <a href="https://www.neduet.edu.pk/"target="_blank" ><img  src="images\NED logo.png" alt="logo" height="50px" width="100px"></a>
+              
+              <a href="https://nedncl.com/index.php"target="_blank"><img  src="images\NCAL.png" alt="logo" height="80px" width="100px"></a>
+              <li class="active">
+                <a href="index.html"><i class="fa fa-home"></i>Home</a>
+              </li>
+              <li>
+                <a href="#about"><i class="fa fa-home"></i>About Us</a></li>
+              <li>
+                <a href=""><i class="fa fa-home"></i>Tutorial </a>
+                <div class="sub-menu-1">
+                  <ul>
+                    <li>
+                      <li class="hover-me"><a href="tutoriabasicl.html">Basic Block Coding</a>
+                      </li>
+                      <li class="hover-me"><a href="tutorialApp.html">App Development</a>
+                      <li class="hover-me"><a href="interim_curriculum.html">Robotics</a></li>
+      
+                      <li class="hover-me"><a href="">Website Development</a>
+                  </li<li class="hover-me"><a href="">Internet of Things</a></li>
+                      <li class="hover-me"><a href="">Artificial Intelligence & Machine Learning</a></li>
+                          
+      
+                </div>
+                </li>
+      
+              <li>
+                <a href="#domains"><i class="fa fa-home"></i>Domains</a>
+                <div class="sub-menu-1">
+                  <ul>
+                    <li>
+                      <li class="hover-me"><a href="basicunits.html">Basic Block Coding</a>
+                      </li>
+                      <li class="hover-me"><a href="">App Development</a>
+      
+                        <div class="sub-menu-2">
+                          <ul>
+                            <li>
+                              <a href="appdev.html">Units</a>
+                              <a href="">|</a>
+                              <a href="MITS.html">MITS</a>
+                            </li>
+                          </ul>
+                        </div>
+                            <li class="hover-me"><a href="interim_curriculum.html">Robotics</a></li>
+      
+                            <li class="hover-me"><a href="">Website Development</a>
+                            </li><li class="hover-me"><a href="">Internet of Things</a></li>
+                            <li class="hover-me"><a href="">Artificial Intelligence & Machine Learning</a></li>
+                          
+                 
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-home"></i>Resources</a>
+              </li>
+              <li><a href="footer"><i class="fa fa-home"></i>Contact Us</a></li>
+            </ul>
+          </div>
+        <App Development></App><div class="table3" id="table3" role="tabpanel" aria-labelledby="appdev-tab">
+
+            <div class="container">
+                <header><div class="header">
+                    <h1>App Development (MITS)</h1></header></div>
+                <table class="table caption-top table-bordered">
+                    
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">Unit</th>
+                        <th scope="col">Context</th>
+                        <th scope="col">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+							<th scope="row" rowspan="2">Get started with MIT app inventer.</th>
+							<td>Procedure</td>
+							<td><a href="http://ai2.appinventor.mit.edu"target="_blank">Open App</a></td>
+						  </tr>
+						  <tr>
+							<td >Task</td>
+							<td><a href="https://appinventor.mit.edu/explore/app-month-gallery"target="_blank">Starting with MIT app inventor</a></td>
+						  </tr>
+						  <!--tr>
+							<td><a href="https://drive.google.com/file/d/1dr4EIwptxb1fmKk92NtA1dZs3wPcvjdQ/view">How to Design Screen</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1QmHr4bMctW0pbgt9PvehdSwlav5J4r__/view">How to do block coding</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1SHjuslJrdtyELwAErlpRA-mL2YxytdSA/view">Complete Working</a></td>
+						  </tr-->
+
+						  <tr>
+							<th scope="row" rowspan="3">Design a prompt button in your app.</th></tr>
+							<td>Procedure</td>
+							<td><a href=""><span class="openappinv"></span></a></td>
+						  </tr>
+						  <tr>
+							<td scope="row" rowspan="">Task</td>
+							<td><a href="">Starting with MIT app inventor</a></td>
+						  </tr>
+						  <!--tr>
+							<td><a href="https://drive.google.com/file/d/1LOJi2HgKZnBx53CA8X7uyWOQMND7tpWq/view">How to Design Screen</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1kME77gpDuvWurYiUSLJNhoUVdIrZ-N2P/view">How to do block coding</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1rGhJ9Y46mmsIYdX2TFG4k80yTmLgUv-t/view">Complete Working</a></td>
+						  </tr-->
+
+
+						  <tr>
+							<th scope="row" rowspan="3">Make a multiple choice-based quiz app.</th></tr>
+							<td>Procedure</td>
+							<td><a href=""><span class="openappinv"></span></a></td>
+						  </tr>
+						  <tr>
+							<td scope="row" rowspan="">Task</td>
+							<td><a href="">Starting with MIT app inventor</a></td>
+						  </tr>
+						  
+
+
+						  <tr>
+							<th scope="row" rowspan="4">Make a password-protected screen.</th></tr>
+							<td>Procedure</td>
+							<td><a href=""><span class="openappinv"></span></a></td>
+						  </tr-->
+						  <tr>
+							<td scope="row" rowspan="">Task</td>
+							<td><a href=""></a></td>
+						  </tr>
+						  <tr>
+							
+
+
+
+						  <tr>
+							<th scope="row" rowspan="3">Make a small quiz</th></tr>
+							<td>Procedure</td>
+							<td><a href=""><span class="openappinv"></span></a></td>
+						  </tr>
+						  <tr>
+							<td scope="row" rowspan="">Task</td>
+							<td><a href=""></a></td>
+						 
+
+                          <tr>
+							<th scope="row" rowspan="3">Create a cashier's account.</th></tr>
+							<td>Procedure</td>
+							<td><a href=""><span class="openappinv"></span></a></td>
+						  </tr>
+						  <tr>
+							<td scope="row" rowspan="">Task</td>
+							<td><a href=""></a></td>
+						  </tr>
+						  
+
+                          <tr>
+							<th scope="row" rowspan="3">Create an AI app in which someone is giving the answer to the questions.</th></tr>
+							<td>Procedure</td>
+							<td><a href=""><span class="openappinv"></span></a></td>
+						  </tr>
+						  <tr>
+							<td scope="row" rowspan="">Task</td>
+							<td><a href=""></a></td>
+						  </tr>
+						  
+							
+
+                          <tr>
+							<th scope="row" rowspan="3">Explore more apps on MIT App inventor and then make them by yourself</th></tr>
+							<td>Procedure</td>
+							<td><a href="https://appinventor.mit.edu/"><span class="openappinv"></span></a></td>
+						  </tr>
+						  <tr>
+							<td scope="row" rowspan="">Task</td>
+							<td><a href="https://drive.google.com/file/d/1buizttkfttb8PR8DtoF5g-8EpfvHv32F/view"target="_blank">Open App</a></td>
+						  </tr>
+						  <!--tr>
+							<td><a href="https://drive.google.com/file/d/1huu7zUulslKnrBsQE4uGXL-h8yMPrfsa/view">Design and Code Block video 2</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1HDZR9DoQ_Z5urZPoTavD5vEvDLEYWTRE/view">Complete Working</a></td>
+						  </tr-->
+                          <tr>
+							<th scope="row" rowspan="7">Annexure</th></tr>
+							<td scope="rows" rowspan="2">Design Tips</td>
+							<td><a href="https://studio.code.org/s/applab-intro/lessons/1/levels/8"target="_blank">Open App</a></td>
+						  </tr>
+                          <tr>
+							<td><a href="https://youtu.be/LnUyPQXXuYo"target="_blank">Open App</a></td>
+						  </tr>
+						  <tr>
+						  <tr>
+							<td scope="row" rowspan="3">Task</td>
+							<td><a href="https://drive.google.com/file/d/1buizttkfttb8PR8DtoF5g-8EpfvHv32F/view"target="_blank">Opne App</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1huu7zUulslKnrBsQE4uGXL-h8yMPrfsa/view"target="_blank">Open App</a></td>
+						  </tr>
+						  <tr>
+							<td><a href="https://drive.google.com/file/d/1HDZR9DoQ_Z5urZPoTavD5vEvDLEYWTRE/view"target="_blank">Open App</a></td>
+						  </tr-->
+
+
+
+
+
+						</tbody>
+					  </table>	
+				  </div>
+
+
+        </body>
+        </html>

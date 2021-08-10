@@ -1,0 +1,341 @@
+<html>
+        <head>
+          <title>Basic Block Coding Video Tutorials</title>
+          <link rel="styleshet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css""
+          />
+        </head>
+        <style>
+          * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+          }
+          body {
+            background-image: url("/images/STEM2.jpg");
+            background-size: cover;
+            background-position: center;
+      
+            font-family: sans-serif;
+          }
+          .menu-bar {
+            background: rgb(32, 165, 120);
+            text-align: center;
+          }
+          .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: azure;
+          }
+          .menu-bar ul li {
+            width: 120px;
+            margin: 15px;
+            padding: 15px;
+          }
+          .menu-bar ul li a {
+            text-decoration: none;
+            color: azure;
+          }
+          .active {
+            background: rgb(76, 199, 117);
+            border-radius: 3px;
+          }
+        /*.menu-bar .fa {
+          }*/
+          .sub-menu-1 {
+            display: none;
+          }
+          .menu-bar ul li:hover .sub-menu-1 {
+            display: block;
+            position: absolute;
+            background: rgb(32, 165, 120);
+            margin-top: 15px;
+            margin-left: -15px;
+          }
+          .menu-bar ul li:hover .sub-menu-1 ul {
+            display: block;
+            margin: 10px;
+          }
+          .menu-bar ul li:hover .sub-menu-1 ul li {
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px double rgb(76, 199, 117);
+            border-radius: 0;
+            text-align: left;
+          }
+          .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+            border-bottom: none;
+          }
+          .menu-bar ul li:hover .sub-menu-1 ul li a :hover {
+            color: rgb(115, 223, 151);
+          }
+          .sub-menu-2 {
+              display: none;
+          }
+          .hover-me:hover .sub-menu-2 {
+              position: absolute;
+              display: block;
+              margin-top: -40px;
+              margin-left: 140px;
+              background: rgb(115, 223, 151);
+          }
+          
+          .logo {
+              margin-inline-start: auto;
+          }
+          
+        </style>
+        <style>
+          * {
+            margin: 0;
+            padding: 0;
+          }
+          .body {
+            background-color: rgb(37, 197, 144);
+            background-size: cover;
+          }
+          .container {
+            width: 80%;
+            margin: 80px auto;
+          }
+          .container h1 {
+            padding-left: 20%;
+            color: rgb(255, 255, 255);
+            font-size: 44px;
+          }
+          .row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+          }
+          .col {
+            flex-basis: 50%;
+            min-width: 250px;
+          }
+          .feature-img {
+            width: 80%;
+            margin: auto;
+            position: relative;
+            border-radius: 6px;
+            overflow: hidden;
+          }
+          .small-img-row {
+            display: flex;
+            background-color: rgb(37, 197, 144);
+            margin: 20px 0;
+            align-items: center;
+            border-radius: 6px;
+            overflow: hidden;
+            width: 85%;
+          }
+          .small-img {
+            position: relative;
+          }
+          .small-img img {
+            width: 150px;
+          }
+          .small-img-row p {
+            margin-left: 20px;
+            color: seagreen;
+            line-height: 22px;
+            font-size: 20px;
+          }
+          .play-btn {
+            width: 60px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+          }
+          .small-img .play-btn {
+            width: 35%;
+          }
+          .video-player {
+            width: 80%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+          }
+          .video:focus {
+            outline: none;
+          }
+          .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            cursor: pointer;
+          }
+          .first {
+            align-items: center;
+            border: 1px ;
+            padding: 20px;
+            align-items: center;
+
+          }
+          .first a{
+            text-decoration: none;
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+            color: rgb(15, 15, 15);
+            ;
+          }
+          .first a .sec{
+            background-color: rgb(0, 0, 0);
+            color: rgb(253, 244, 244);
+            border: 1px solid black;
+          }
+
+
+          
+        </style>
+      
+        <body>
+          <div class="menu-bar">
+            <ul>
+              <img class="logo">
+              
+              <a href="https://www.neduet.edu.pk/"target="_blank" ><img  src="images\NED logo.png" alt="logo" height="50px" width="100px"></a>
+              
+              <a href="https://nedncl.com/index.php"target="_blank"><img  src="images\NCAL.png" alt="logo" height="80px" width="100px"></a>
+              <li class="active">
+                <a href="index.html"><i class="fa fa-home"></i>Home</a>
+              </li>
+              <li>
+                <a href="#about"><i class="fa fa-home"></i>About Us</a></li>
+              <li>
+                <a href=""><i class="fa fa-home"></i>Tutorial </a>
+                <div class="sub-menu-1">
+                  <ul>
+                    <li>
+                      <li class="hover-me"><a href="tutoriabasicl.html">Basic Block Coding</a>
+                      </li>
+                      <li class="hover-me"><a href="tutorialApp.html">App Development</a>
+                      <li class="hover-me"><a href="interim_curriculum.html">Robotics</a></li>
+      
+                      <li class="hover-me"><a href="">Website Development</a>
+                  </li<li class="hover-me"><a href="">Internet of Things</a></li>
+                      <li class="hover-me"><a href="">Artificial Intelligence & Machine Learning</a></li>
+                          
+      
+                </div>
+                </li>
+      
+              <li>
+                <a href="#domains"><i class="fa fa-home"></i>Domains</a>
+                <div class="sub-menu-1">
+                  <ul>
+                    <li>
+                      <li class="hover-me"><a href="basicunits.html">Basic Block Coding</a>
+                      </li>
+                      <li class="hover-me"><a href="">App Development</a>
+      
+                        <div class="sub-menu-2">
+                          <ul>
+                            <li>
+                              <a href="appdev.html">Units</a>
+                              <a href="">|</a>
+                              <a href="MITS.html">MITS</a>
+                            </li>
+                          </ul>
+                        </div>
+                            <li class="hover-me"><a href="interim_curriculum.html">Robotics</a></li>
+      
+                            <li class="hover-me"><a href="">Website Development</a>
+                            </li><li class="hover-me"><a href="">Internet of Things</a></li>
+                            <li class="hover-me"><a href="">Artificial Intelligence & Machine Learning</a></li>
+                          
+                 
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-home"></i>Resources</a>
+              </li>
+              <li><a href="footer"><i class="fa fa-home"></i>Contact Us</a></li>
+            </ul>
+          </div>
+          
+       
+          
+  <!--Tutorial videos-->
+    <div class="container">
+      <h1>Tutorials Videos From the Units</h1>
+      <div class="row">
+        <div class="col">
+          <div class="feature-img">
+            <img src="images/Video1.jpg" width="100%" />
+            <a href="https://www.neduet.edu.pk/"target="_blank" ><img src="/images/play.png" class="play-btn"></a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="small-img-row">
+            <div class="small-img">
+              <img src="/images/video2.jfif" />
+              <img src="/images/play.png" class="play-btn" onclick="playVideo" />
+            </div>
+            <p>
+              Unit 1<br />Here you will be taught how to learn different courses
+            </p>
+          </div>
+          <div class="small-img-row">
+            <div class="small-img">
+              <img src="/images/video3.jfif" />
+              <img src="/images/play.png" class="play-btn" onclick="playVideo" />
+            </div>
+            <p>
+              Unit 2<br />Here you will be taught how to learn different courses
+            </p>
+          </div>
+          <div class="small-img-row">
+            <div class="small-img">
+              <img src="/images/video2.jpg" />
+              <img src="/images/play.png" class="play-btn" onclick="playVideo" />
+            </div>
+            <p>
+              Unit 3<br />Here you will be taught how to learn different courses
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video-player" id="videoPlayer">
+      <video width="100%" controls autoplay>
+        <source
+          src="https://youtu.be/h7NtxHTrqgU"
+          type="/inframe"
+          id="myVideo"
+        />
+        <img src="/images/close.png" class="close-btn" onclick="stopVideo()" />
+      </video>
+    </div>
+    <script>
+      var videoPlayer = document.getElementById("myVideo");
+      var myVideo = document.getElementById("myVideo");
+      function stopVideo() {
+        videoPlayer.style.display = "none";
+      }
+      function playVideo(file) {
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+      }
+    </script>
+
+    <!--numbers-->
+    <div class="first">
+      <h1></h1>
+      <a href="">Prev</a>
+      <a href="" class="sec">1</a>
+      <a href="" class="sec">2</a>
+      <a href="" class="sec">3</a>
+      <a href="" class="sec">4</a>
+      <a href="" class="sec">5</a>
+      <a href="">Next</a>
+      
+
+      
+  </body>
+</html>
