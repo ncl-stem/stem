@@ -1,0 +1,555 @@
+<html>
+  <head>
+    <!--script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script-->
+    <title>STEM</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-image: url("/images/STEM2.jpg");
+      
+      background-size: cover;
+      background-position: center;
+
+      font-family: sans-serif;
+    }
+    
+    .menu-bar {
+      background: rgb(32, 165, 120);
+      text-align: center;
+    }
+    .menu-bar .logo{
+      margin: auto;
+      padding-top: auto;
+    }
+    .menu-bar ul {
+      display: inline-flex;
+      list-style: none;
+      color: azure;
+    }
+    .menu-bar ul li {
+      width: 120px;
+      margin: 15px;
+      padding: 15px;
+    }
+    .menu-bar ul li a {
+      text-decoration: none;
+      color: azure;
+    }
+    .active {
+      background: rgb(76, 199, 117);
+      border-radius: 3px;
+    }
+  /*.menu-bar .fa {
+    }*/
+    .sub-menu-1 {
+      display: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 {
+      display: block;
+      position: absolute;
+      background: rgb(32, 165, 120);
+      margin-top: 15px;
+      margin-left: -15px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul {
+      display: block;
+      margin: 10px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li {
+      width: 150px;
+      padding: 10px;
+      border-bottom: 1px double rgb(76, 199, 117);
+      border-radius: 0;
+      text-align: left;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+      border-bottom: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li a :hover {
+      color: rgb(115, 223, 151);
+      text-align: center;
+    }
+    .sub-menu-2 {
+        display: none;
+    }
+    .hover-me:hover .sub-menu-2 {
+        position: absolute;
+        display: block;
+        margin-top: -40px;
+        margin-left: 140px;
+        background: rgb(115, 223, 151);
+    }
+    
+    
+  
+  
+  
+
+    
+    .header {
+        margin: auto;
+        color: seashell;
+        
+        text-align: left;
+        font-size: x-large;
+        padding-top: 100px;
+    }
+    
+
+    .about{
+      width: 100%;
+      padding: 78px 0px;
+      background-color: cornsilk;
+    }
+    .about img{
+      height: auto;
+      width: 480px;
+    }
+    .about-text{
+      width: 550px;
+    }
+    .main{
+      width: 1130px;
+      max-width: 95%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .about-text h1{
+      color: #000;
+      font-size: 80px;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+      
+
+    }
+    .about-text h5{
+      color: black;
+      font-size: 20px;
+      text-transform: capitalize;
+      margin-bottom: 25px;
+      letter-spacing: 2px;
+    }
+    .about-text p{
+      color: black;
+      letter-spacing: 1px;
+      line-height: 28px;
+      font-size: 18px;
+      margin-bottom: 45px;
+    }
+    button {
+      background: rgb(115, 223, 151);
+      color: black;
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      padding: 13px 30px;
+      border-radius: 30px;
+    }
+    button:hover{
+      background: transparent;
+      border: 2px solid rgb(115, 223, 151);
+      cursor: pointer;
+    }
+    /*footer{
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      background: rgb(14, 70, 51);
+    }
+    .main-content{
+      display: flex;
+    }
+    .main-content .box{
+      flex-basis: 50%;
+      padding: 10px 20px;
+
+    }
+    .box h2{
+      font-size: 1.125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .box .content{
+      margin: 20px 0 0 0;
+    }
+    .left .content p{
+      text-align: justify;
+    }
+    .left .content .social a{
+      padding: 0 2px;
+    }
+    .left .content .social a span{
+      height: 40px;
+      width: 40px;
+      background: aquamarine;
+      line-height: 40px;
+      text-align: center;
+      font-size: 18px;
+      border-radius: 5px;
+    }*/
+    .domains{
+      background: cornsilk;
+      text-align: center;
+    }
+    .domains h1{
+      font-size: 60px;
+    }
+    .row{
+      background: cornsilk;
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .dom-col{
+      flex-basis: 31%;
+      background: rgb(209, 252, 216);
+      border-radius: 10px;
+      margin-bottom: 5%;
+      padding: 20px 12px;
+      box-sizing: border-box;
+      transition: 0.5s;
+    }
+    h3 {
+      text-align: center;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+    .dom-col img{
+      width: 200px;
+      height: 100px;
+    }
+    .dom-col:hover{
+      box-shadow: 0 0 20px 0px rgb(159, 255, 175);
+    }
+    @media(max-width: 700px){
+      .row{
+        flex-direction: column;
+      }
+      button {
+        padding-top: 10px;
+      background: rgb(115, 223, 151);
+      color: black;
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      padding: 13px 30px;
+      border-radius: 30px;
+    }
+    button:hover{
+      background: transparent;
+      border: 2px solid rgb(115, 223, 151);
+      cursor: pointer;
+    }
+    }
+    .footer{
+      width: 100%;
+      
+      padding: 30px 0;
+      color: blanchedalmond;
+
+    }
+    .footer h4{
+      text-align: left;
+      margin-bottom: 25px;
+      margin-top: 20px;
+      font-weight: 600;
+      
+
+    }
+    .icons .fa{
+      color: rgb(159, 255, 175);
+      margin: 0 13px;
+      cursor: pointer;
+      padding: 18px 0;
+
+    }
+    .footer .box{
+      margin-right: auto;
+    }
+
+ 
+
+  </style>
+
+  <body>
+    
+    <div class="menu-bar">
+      <ul>
+        <img class="logo">
+        
+        <a href="https://www.neduet.edu.pk/"target="_blank" ><img  src="images\NED logo.png" alt="logo" height="50px" width="100px"></a>
+        
+        <a href="https://nedncl.com/index.php"target="_blank"><img  src="images\NCAL.png" alt="logo" height="80px" width="100px"></a>
+        <li class="active">
+          <a href="index.html"><i class="fa fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa fa-home"></i>About Us</a></li>
+      
+        <li>
+          <a href=""><i class="fa fa-home"></i>Tutorial </a>
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <li class="hover-me"><a href="tutoriabasicl.html">Basic Block Coding</a>
+                </li>
+                <li class="hover-me"><a href="tutorialApp.html">App Development</a>
+                <li class="hover-me"><a href="interim_curriculum.html">Robotics</a></li>
+
+                <li class="hover-me"><a href="webdev.html">Website Development</a>
+            </li><li class="hover-me"><a href="">Internet of Things</a></li>
+                <li class="hover-me"><a href="AI.html">Artificial Intelligence & Machine Learning</a></li>
+                </ul>    
+              </div>
+          </li>
+          <li>
+          <a href="#domains"><i class="fa fa-home"></i>Domains</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <li class="hover-me"><a href="basicunits.html">Basic Block Coding</a>
+                </li>
+                <li class="hover-me"><a href="appdev.html">App Development</a>
+
+                  <div class="sub-menu-2">
+                    <ul>
+                      <li>
+                        <a href="">Units</a>
+                        <a href="">|</a>
+                        <a href="MITS.html">MITS</a>
+                      </li>
+                    </ul>
+                  </div>
+                      <li class="hover-me"><a href="interim_curriculum.html">Robotics</a></li>
+
+                      <li class="hover-me"><a href="webdev.html">Website Development</a>
+                      </li><li class="hover-me"><a href="">Internet of Things</a></li>
+                      <li class="hover-me"><a href="AI.html">Artificial Intelligence & Machine Learning</a></li>
+                    
+           
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="resources.html"><i class="fa fa-home"></i>Resources</a>
+        </li>
+        <li><a href="footer"><i class="fa fa-home"></i>Contact Us</a></li>
+      </ul>
+    </div>
+    
+    <header>
+      
+      </div>
+        <div class="header">
+          
+            <h1> STEM <br>SCIENCE,TECHNOLOGY,ENGINEERING and MATHEMATICS</h1>
+              <h2>Stem courses help teach courses related to the metioned fields. Since the demand for people to learn these courses 
+                rise day by day many people have started applying for these courses</h2>
+        </div>
+      
+    </header>
+
+     <!--About us-->
+    <section class="about" id="about">
+      <div class="main">
+        <img src="images\STEM3.jfif">
+        <div class="about-text">
+          <h1>About Us</h1>
+          <h5>National Center Of Artificial Intelligence</h5>
+          <p>National Center of Artificial Intelligence (NCAI) 
+            was inaugurated at the main campus of National University 
+            of Sciences & Technology (NUST) at NUST on 16th of March, 2018​​.</p>
+            
+
+            <h5>Neurocomputation Lab</h5>
+            <p>The aim of this laboratory is to incorporate artificial neural network electronic 
+              hardware (neuromorphic hardware) in the field of cognitive sciences.</p>
+              <a href="https://nedncl.com/about-us.php"target="_blank"><button type="button">Learn More</button></a>
+            </div>
+          </div>
+              
+      </section>
+              <!--About end-->
+
+
+              <!--Contact us
+              <footer>
+              <div class="main-content">
+                <div class="left box">
+                  <h2>NEURO COMPUTATION LAB</h2>
+                  <div class="content">
+                    <p>Neurocomputation Lab, NCAI
+                      Computer and Information Systems Department
+                      NED University of Engineering & Technology
+                      University Road, 75270, Karachi.</p>
+                      <div class="social">
+                        <a href="#"><span class="fas fa-facebook-f"></span></a>
+                        <a href="#"><span class="fas fa-linkedin-f"></span></a>
+                        <a href="#"><span class="fas fa-youtube-f"></span></a>
+                      </div>
+                <div class="center box">
+                  <h2>Contact Info</h2>
+                  <div class="place">
+                    <span class="fas fa-map-alt"></span>
+                    <span class="text">NED University</span>
+
+                  </div>
+                  <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+92 310 8080828</span>
+
+                  </div>
+                  <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">kamranwaseem@neduet.edu.pk</span>
+                  </div>
+                </div>
+
+                <div class="right box">
+                  <h2>Contact Us</h2>
+                  <div class="content">
+                    <form action="#">
+                      <div class="email">
+                        <div class="text">Email *</div>
+                        <input type="email" required>
+                      </div>
+                      <div class="msg">
+                        <div class="text">Message *</div>
+                        <textarea rows="2" cols="25" required></textarea>
+                      </div>
+                      <div class="btn">
+                        <button>Send</button>
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+
+
+                </div>
+
+              </div>
+            </footer>
+              <!--Contact end-->
+
+               <!-- Domains-->
+               <section class="domains" id="domains">
+                 <h1>Domains</h1>
+                 <div class="row">
+                   <div class="dom-col">
+                     <h3>Basic Block Coding</h3>
+                     <img src="images\bbc.png" alt="basic">
+                     <p>Block coding is a basic form of computer programming and a great 
+                       way for kids to get started. Rather than having to write complex lines of 
+                       computer code, it uses a simple 
+                       drag and drop interface.</p>
+                       <a href="basicunits.html"target="_blank"><button type="button">Learn More</button></a>
+
+                   </div>
+                   <div class="dom-col">
+                    <h3>App Development</h3>
+                    <img src="images\ap.png" alt="App">
+                    <p>
+                      Application development is the process of creating a computer program or a 
+                      set of programs to perform the different tasks that a business requires</p>
+                      <a href="appdev.html"target="_blank"><button type="button">Learn More</button></a> 
+                      
+                  </div>
+                  <div class="dom-col">
+                    <h3>Robotics</h3>
+                    <img src="images\rob.jfif" alt="robot">
+                    
+                    <p>
+                      Robotics, design, construction, and use of machines (robots)
+                       to perform tasks done traditionally by human beings</p>
+                       <a href="interim_curriculum.html"target="_blank"><button type="button">Learn More</button></a> 
+                      
+                  </div>
+                  
+                      
+                  </div>
+                 </div>
+                 <div class="row">
+                 <div class="dom-col">
+                  <h3>Web Development</h3>
+                  <img src="images\wd.png" alt="web">
+                  <p>Web development, is the creation of dynamic web applications.</p>
+                  <a href="webdev.html"target="_blank"><button type="button">Learn More</button></a>
+                    
+                </div>
+                <div class="dom-col">
+                  <h3>Internet of Things</h3>
+                  <img src="images\iot.jfif" alt="Iot">
+                  <p>The Internet of Things (IoT) refers to a system of interrelated,
+                     internet-connected objects that are able to collect and transfer
+                      data over a wireless network without human intervention.</p>
+                      <a href=""target="_blank"><button type="button">Learn More</button></a>
+                    
+                </div>
+                <div class="dom-col">
+                  
+                  <h3>Artificial Intelligence & Machine Learning</h3>
+                  <img src="images\ai.jfif" alt="AI">
+                  <p>Machine learning is an application of artificial intelligence (AI)
+                     that provides systems the ability to automatically learn and improve 
+                     from experience without being explicitly programmed.</p>
+                     <a href="AI.html"target="_blank"><button type="button">Learn More</button></a>
+                  </div>
+                </div>
+               </section>
+               <!--Footer-->
+
+               <section class="footer" id="footer">
+                 <h2>Address</h2>
+                 <p>Neurocomputation Lab, NCAI<br>
+                  Computer and Information Systems Department<br>
+                  NED University of Engineering & Technology<br>
+                  University Road, 75270, Karachi.</p>
+                  <div class="icons">
+                    <i class="fas fa-facebook"></i>
+                    <i class="fas fa-linkedin-f"></i>
+                    <i class="fas fa-youtube-f"></i>
+
+                  </div>
+                  <div class="box">
+                    <h2>Contact Info</h2>
+                    <div class="place">
+                      <span class="fas fa-map-alt"></span>
+                      <span class="text">NED University</span>
+  
+                    </div>
+                    <div class="phone">
+                      <span class="fas fa-phone-alt"></span>
+                      <span class="text">Phone: +92 310 8080828</span>
+  
+                    </div>
+                    <div class="email">
+                      <span class="fas fa-envelope"></span>
+                      <span class="text">Email: kamranwaseem@neduet.edu.pk</span>
+
+                    </div>
+                    <div class="btn">
+                      <a href="https://nedncl.com/contact-us.php"target="_blank"><button type="button">Contact Us</button></a>
+                    </div>
+                  </div>
+               </section>
+        
+
+    
+
+   
+
+  </body>
+</html>
