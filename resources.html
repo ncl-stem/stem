@@ -1,0 +1,375 @@
+<html>
+  <head>
+    <title>Resources</title>
+    <link rel="styleshet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      /*background-image: url("STEM2.jpg");*/
+      background-size: cover;
+      background-position: center;
+
+      font-family: sans-serif;
+    }
+    .menu-bar {
+      background: rgb(32, 165, 120);
+      text-align: center;
+    }
+    .menu-bar ul {
+      display: inline-flex;
+      list-style: none;
+      color: azure;
+    }
+    .menu-bar ul li {
+      width: 120px;
+      margin: 15px;
+      padding: 15px;
+    }
+    .menu-bar ul li a {
+      text-decoration: none;
+      color: azure;
+    }
+    .active {
+      background: rgb(76, 199, 117);
+      border-radius: 3px;
+    }
+  /*.menu-bar .fa {
+    }*/
+    .sub-menu-1 {
+      display: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 {
+      display: block;
+      position: absolute;
+      background: rgb(32, 165, 120);
+      margin-top: 15px;
+      margin-left: -15px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul {
+      display: block;
+      margin: 10px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li {
+      width: 150px;
+      padding: 10px;
+      border-bottom: 1px double rgb(76, 199, 117);
+      border-radius: 0;
+      text-align: left;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+      border-bottom: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li a :hover {
+      color: rgb(115, 223, 151);
+    }
+    .sub-menu-2 {
+        display: none;
+    }
+    .hover-me:hover .sub-menu-2 {
+        position: absolute;
+        display: block;
+        margin-top: -40px;
+        margin-left: 140px;
+        background: rgb(115, 223, 151);
+    }
+    
+    .logo {
+        margin-inline-start: auto;
+    }
+    .header {
+        margin: auto;
+        color: seashell;
+        
+        text-align: center;
+        font-size: larger;
+        padding-top: 150px;
+    }
+  /*  .stem {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.stem td, .stem th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.stem tr:nth-child(even){background-color: #f2f2f2;}
+
+.stem tr:hover {background-color: #ddd;}
+
+.stem th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}*/ .container {
+        background: rgb(249, 250, 249);
+    
+    background-size: cover;
+}
+    .header {
+        align-items: center;
+        margin: 0;
+        color: rgb(2, 2, 2);
+        
+        text-align: center;
+        font-size: larger;
+        padding-top: 0;
+
+    }
+    /*.table {
+        font-size: medium;
+        font-family: sans-serif;
+        margin: auto;
+        padding: auto;
+        align-items: center;
+        
+        
+       
+    }
+
+    .table.table-bordered{
+    border-collapse: collapse;
+        margin-top:20px;
+  	}
+	table.table-bordered > thead > tr > th{
+        border:1px solid rgb(0, 0, 0);
+	}
+	.table.table-bordered > tbody > tr > td{
+        border:1px solid rgb(0, 0, 0);
+	}*/
+    .table {
+        width: 800px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+}
+
+.table td, .table th {
+  border: solid;
+  padding: 8px;
+  text-align: center;
+  font-size: medium;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #31d196;
+  border-color: black;
+  color: white;
+  font-size: large;
+}
+.table td{
+  color: black;
+  background-color: white;
+  font-size: 16px;
+}
+.table button {
+  width: max-content;
+
+  background-color: #4CAF50; /* Green */
+  border:none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-table;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.table button {
+  background-color: white; 
+  color: black; 
+  border-block-width: initial;
+}
+.table button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+  </style>
+
+  <body>
+    <div class="menu-bar">
+      <ul>
+        <img class="logo">
+        
+        <a href="https://www.neduet.edu.pk/"target="_blank" ><img  src="images\NED logo.png" alt="logo" height="50px" width="100px"></a>
+        
+        <a href="https://nedncl.com/index.php"target="_blank"><img  src="images\NCAL.png" alt="logo" height="80px" width="100px"></a>
+        <li class="active">
+          <a href="index.html"><i class="fa fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa fa-home"></i>About Us</a></li>
+        <li>
+          <a href=""><i class="fa fa-home"></i>Tutorial </a>
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <li class="hover-me"><a href="tutoriabasicl.html">Basic Block Coding</a>
+                </li>
+                <li class="hover-me"><a href="tutorialApp.html">App Development</a>
+                <li class="hover-me"><a href="interim_curriculum.html">Robotics</a></li>
+
+                <li class="hover-me"><a href="webdev.html">Website Development</a>
+            </li<li class="hover-me"><a href="">Internet of Things</a></li>
+                <li class="hover-me"><a href="AI.html">Artificial Intelligence & Machine Learning</a></li>
+                    
+
+          </div>
+          </li>
+
+        <li>
+          <a href="#domains"><i class="fa fa-home"></i>Domains</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <li class="hover-me"><a href="basicunits.html">Basic Block Coding</a>
+                </li>
+                <li class="hover-me"><a href="appdev.html">App Development</a>
+
+                  <div class="sub-menu-2">
+                    <ul>
+                      <li>
+                        <a href="appdev.html">Units</a>
+                        <a href="">|</a>
+                        <a href="MITS.html">MITS</a>
+                      </li>
+                    </ul>
+                  </div>
+                      <li class="hover-me"><a href="interim_curriculum.html">Robotics</a></li>
+
+                      <li class="hover-me"><a href="webdev.html">Website Development</a>
+                      </li><li class="hover-me"><a href="">Internet of Things</a></li>
+                      <li class="hover-me"><a href="AI.html">Artificial Intelligence & Machine Learning</a></li>
+                    
+           
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="resources.html"><i class="fa fa-home"></i>Resources</a>
+        </li>
+        <li><a href="footer"><i class="fa fa-home"></i>Contact Us</a></li>
+      </ul>
+    </div>
+    
+      <div class="table" id="table" role="tabpanel" aria-labelledby="gamedev-tab">
+        <div class="container">
+            <header><div class="header">
+                <h1>Resources</h1></header></div>
+            
+            <table class="table caption-top table-bordered">
+                
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">Domains</th>
+                    <th scope="col">Teacher's Guide</th>
+                    
+                    <th scope="col">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                    <tr>
+                    <th scope="row" rowspan="3">Basic Block Coding</th>
+                    <td scope="row" rowspan="1">step-by-step guide for assigning students open-ended projects that
+                        use Code.org tools. This guide could be used by anyone but is targeted at middle and high school teachers:</td>
+                    
+                    <td><a href="https://code.org/athome/project-ideas"target="_blank"><span class="task"></span><button>Open Website</button> </a></td>
+                    </tr>
+                  <tr>
+                    <td scope="row" rowspan="1">If any teacher is using this platform, then the following link will help him/her.  </td>
+                    
+                    <td><a href="https://support.code.org/hc/en-us/articles/115001554911-Configuring-sharing-options-for-students-using-App-Lab-Game-Lab-and-Web-Lab"target="_blank"><button>Open Website</button></a></td>
+                  </tr>
+                  <tr><td scope="row" rowspan="1">Document View of Basic Block Coding </td>
+                    
+                    <td><a href="https://pern-my.sharepoint.com/:w:/g/personal/urooj_78034706_talmeez_pk/ETRiBZmC-cZDk3QVPwmgpkEBtVRNPOeV0AYpYQ0IsFyMng?e=4iIPXN"target="_blank"><button>Open Document</button></a></td></tr>
+                  
+   
+
+                  <tr>
+                    <th scope="row" rowspan="7">APP Development</th>
+                    <tr>
+                        <td scope="rows" rowspan="2">Teaching guide for app labs</td>
+                        <td><a href="https://studio.code.org/s/applab-intro/lessons/1/levels/8"target="_blank"><button>Open Website</button></a></td>
+                      </tr>
+                      <tr>
+                          
+                        <td><a href="https://youtu.be/LnUyPQXXuYo"target="_blank"><button>Open Website</button></a></td>
+                      
+                    </tr>
+                    <td scope="row" rowspan="1">To know how to make an App on MIT App Inventor 
+                        watch the following video</td>
+                    
+                    <td><a href="https://www.youtube.com/watch?v=BT4YihNXiYw&list=PL7sbjUYIdF3Ux_UrRiBaC73OrJLvLza4u"target="_blank"><button>Open Website</button></a></td>
+                  </tr>
+
+                  <tr><td scope="row" rowspan="1">You can get your App on your phone as well as your computer. To get it on 
+                      your computer screen, install the emulator from the given link. </td>
+                      <td><a href="http://appinventor.mit.edu/explore/ai2/setup-emulator.html"target="_blank"><button>Open Website</button></a></td></tr>
+   <tr>
+                    <td>This link will help you to know how to download and use the emulator. </td>
+                    <td><a href="https://www.youtube.com/watch?v=vd3R8ZurzUU"target="_blank"><button>Open Website</button></a></td>
+                  </tr>
+                  <tr><td scope="row" rowspan="1">Document View of App Development </td>
+                    
+                    <td><a href="https://pern-my.sharepoint.com/:w:/g/personal/urooj_78034706_talmeez_pk/EY0gne7856dIkdQM_M3IDA8BjjNroYBOFwPBqQABGK-6-A?e=Mj1Bcl"target="_blank"><button>Open Document</button></a></td></tr>
+                 
+                  
+
+
+                  <tr>
+                    <th scope="row" rowspan="2">Web Development</th>
+                    
+                        <td scope="row" rowspan="1">Guide for sharing the Website.</td>
+                        
+                        <td><a href="https://support.code.org/hc/en-us/articles/115001554911-Configuring-sharing-options-for-students-using-App-Lab-Game-Lab-and-Web-Lab"target="_blank"><button>Open Website</button></a></td>
+                      </tr>
+                      <tr><td scope="row" rowspan="1">Document View of Web Development </td>
+                    
+                        <td><a href="https://pern-my.sharepoint.com/:w:/g/personal/urooj_78034706_talmeez_pk/ET8EAMYDn9lGhhTWHY-IlioBENiTLuv4oxcWNouCcD74ag?e=5UyIef"target="_blank"><button>Open Document</button></a></td></tr>
+                 
+                  
+
+                  <tr><th scope="row" rowspan="2">Artificial Intelligence & Machine Learning</th>
+                
+                        
+                        <td>Teacher's Guide</td>
+                        <td><a href="https://machinelearningforkids.co.uk"target="_blank"><button>Open Website</button></a></td>
+                      </tr>
+                      <tr><td >Document View of Web Development </td>
+                    
+                        <td><a href="https://pern-my.sharepoint.com/:w:/g/personal/urooj_78034706_talmeez_pk/EURiCfZgKEtGlKgoOXKOr40BlUc9UqkaxC3IkjAwespAgw?e=eJ93OU"target="_blank"><button>Open Document</button></a></td></tr>
+                  
+
+                </tbody>
+              </table>	
+          </div>
+
+
+
+  </body>
+</html>
