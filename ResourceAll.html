@@ -182,6 +182,134 @@
       background-color: #c92f1a;
       
     }
+    @media handheld, only screen and (max-width: 700px) {
+ 
+ .drop {
+ display: inline-block;
+ position: relative;
+}
+.drop button {
+ border: none;
+ padding: 8px 5px;
+ background-color: #c92f1a;
+ color: white;
+ transition: 0.3s;
+ cursor: pointer;
+ margin-top: 20px;
+ font-family:sans-serif;
+ font-size: 14px;
+}
+.drop:hover button {
+ background-color: #c92f1a;
+}
+.drop div {
+ background-color: white;
+ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+ z-index: 1;
+ visibility: hidden;
+ position: absolute;
+ min-width: 50%;
+ font-size: 12px;
+
+ opacity: 0;
+ transition: 0.3s;
+}
+.drop:hover div {
+ visibility: visible;
+ opacity: 1;
+}
+.drop div {
+ display: block;
+ text-decoration: none;
+ padding: 8px;
+ color: black;
+
+}
+.drop div a {
+ width: 200%;
+ height: 40px;
+ border-bottom: 2px dotted #c92f1a;
+
+ display: block;
+ text-decoration: none;
+ padding: 8px;
+ color: black;
+}
+.resources {
+ background-color: white;
+}
+.heading h1{
+ text-align: center;
+ 
+ color: rgba(202, 55, 18, 0.904);
+ margin-top: 100px;
+ font-size: 30px;
+}
+.heading h2{
+ font-size: 20px;
+ border-top: 1px dashed rgb(219, 205, 205);
+}
+.basic {
+ font-size: large;
+ text-align: left;
+ margin-top: 100px;
+ margin-left: 40px;
+ color: black;
+ border-top: 0px dashed rgb(219, 205, 205);
+}
+.app {
+ font-size: large;
+ text-align: left;
+ margin-top: 200px;
+ margin-left: 40px;
+ color: black;
+ border-top: 0px dashed rgb(219, 205, 205);
+}
+.web {
+ font-size: large;
+ text-align: left;
+ margin-top: 200px;
+ margin-left: 40px;
+ color: black;
+ border-top: 0px dashed rgb(219, 205, 205);
+}
+.and {
+ font-size: large;
+ text-align: left;
+ margin-top: 200px;
+ margin-bottom: 150px;
+ margin-left: 40px;
+ color: black;
+ border-top: 0px dashed rgb(219, 205, 205);
+}
+
+
+.btn {
+ display: inline-block;
+ position: relative;
+ top: 0px;
+ left: 10px;
+ 
+ 
+}
+.btn button {
+ border: none;
+ padding: 8px 10px;
+ background-color: #c92f1a;
+ color: white;
+ transition: 0.3s;
+ cursor: pointer;
+ margin-top: 0;
+ font-size: 14px;
+ font-family:sans-serif;
+
+}
+.btn:hover button {
+ background-color: #c92f1a;
+ 
+}
+
+}
     
   </style>
   <body>
@@ -364,80 +492,89 @@
         </div>
       </div>
     </section>
-    <!-- Footer >
-    <footer id="footer" class="section">
-      <!-- container >
-      <div class="container">
-        <!-- row >
-        <div class="row">
-          <!-- footer logo -->
-          <div class="col-md-6">
-            <!--div class="footer-logo">
-              <a class="logo" href="index.html">
-                <img src="./img/logo.png" alt="logo" />
-              </a>
-            </div-->
-          </div>
-          <!-- footer logo -->
-
-          <!-- footer nav -->
-          <!--div class="col-md-6">
-            <ul class="footer-nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Domains</a></li>
-              <li><a href="blog.html">Resources</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <!-- /footer nav -->
-        </div>
-        <!-- /row -->
-
-        <!-- row -->
-        <div id="bottom-footer" class="row">
-          <!-- social -->
-          <div class="col-md-4 col-md-push-8">
-            <ul class="footer-social">
-              <li>
-                <a href="https://www.facebook.com/nc.ncai" class="facebook"
-                  ><i class="fa fa-facebook"></i
-                ></a>
-              </li>
-
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UCOyh_A31fD4-hc9xijwS7oA"
-                  class="youtube"
-                  ><i class="fa fa-youtube"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/company/ned-nclab"
-                  class="linkedin"
-                  ><i class="fa fa-linkedin"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <!-- /social -->
-
-          <!-- copyright -->
-          <div class="col-md-8 col-md-pull-4">
-            <div class="footer-copyright">
-              <span
-                >&copy;  All Rights Reserved, Neurocomputation Lab  <!--i class="fa fa-heart-o" aria-hidden="true"></i> by
-                <a href="https://colorlib.com">Colorlib</a></span
-              >
-            </div>
-          </div>
-          <!-- /copyright -->
-        </div>
-        <!-- row -->
+     <!-- Footer >-->
+  <footer id="footer" class="section">
+    <!-- container >-->
+    <div class="container">
+      <!-- row >-->
+      <div class="row">
+      <!-- footer logo -->
+      <div class="col-md-6">
+        <!--div class="footer-logo">
+        <a class="logo" href="index.html">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+        </div-->
       </div>
-      <!-- /container -->
-    </footer>
-    <!-- /Footer -->
-  </body>
-</html>
+      <!-- footer logo -->
+  
+      <!-- footer nav -->
+      <div class="col-md-6">
+        <!--ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="blog.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul-->
+      </div>
+      <!-- /footer nav -->
+      </div>
+      <!-- /row -->
+  
+      <!-- row -->
+      <div id="bottom-footer" class="row">
+      <!-- social -->
+      <div class="col-md-4 col-md-push-8">
+        <ul class="footer-social">
+        <li>
+          <a href="https://www.facebook.com/nc.ncai" class="facebook"
+          ><i class="fa fa-facebook"></i
+          ></a>
+        </li>
+  
+        <li>
+          <a
+          href="https://www.youtube.com/channel/UCOyh_A31fD4-hc9xijwS7oA"
+          class="youtube"
+          ><i class="fa fa-youtube"></i
+          ></a>
+        </li>
+        <li>
+          <a
+          href="https://www.linkedin.com/company/ned-nclab"
+          class="linkedin"
+          ><i class="fa fa-linkedin"></i
+          ></a>
+        </li>
+        </ul>
+      </div>
+      <!-- /social -->
+  
+           <!-- copyright -->
+      <div class="col-md-8 col-md-pull-4">
+        <div class="footer-copyright">
+          <span
+          >&copy;  All Rights Reserved, Neurocomputation Lab  <!--i class="fa fa-heart-o" aria-hidden="true"></i> by
+          <a href="https://colorlib.com">Colorlib</a></span
+          -->
+        </div>
+        </div>
+        <!-- /copyright -->
+          </div>
+          <!-- row -->
+        </div>
+        <!-- /container -->
+      </footer>
+      <!-- /Footer -->
+  
+      <!-- preloader -->
+      <div id="preloader"><div class="preloader"></div></div>
+      <!-- /preloader -->
+  
+      <!-- jQuery Plugins -->
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+    </body>
+  </html>

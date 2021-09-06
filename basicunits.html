@@ -66,49 +66,53 @@
     </header>
     <!-- /Header -->
   <style>
-    .header {
-        margin: auto;
-        color: white;
-        
-        text-align: center;
-        font-size: larger;
-        padding-top: 100px;
-    }
-    .header h1{
-		  color: rgba(202, 55, 18, 0.904);
-	  }
+   .header {
+  margin: auto;
+  color: white;
 
-    .header {
-      background-color: white;
-        align-items: center;
-        margin-top: 0;
-        color: black;
-        
-        text-align: center;
-        font-size: larger;
-        padding-right: 0;
-
-    }
-  
-    .table {
-        width: 800px;
-        font-family: Arial, Helvetica, sans-serif;
-        border-collapse: collapse;
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 100px;
+}
+.header h1 {
+  color: rgba(202, 55, 18, 0.904);
 }
 
-.table td, .table th {
+.header {
+  background-color: white;
+  align-items: center;
+  margin-top: 0;
+  color: black;
+
+  text-align: center;
+  font-size: 30px;
+  padding-right: 0;
+}
+
+.table {
+  width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.table td,
+.table th {
   border: solid;
   padding: 8px;
   text-align: center;
   font-size: medium;
 }
 
-.table tr:nth-child(even){background-color: #f2f2f2;}
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-.table tr:hover {background-color: #ddd;}
+.table tr:hover {
+  background-color: #ddd;
+}
 
 .table th {
   padding-top: 12px;
@@ -119,36 +123,92 @@
   color: white;
   font-size: large;
 }
-.table td{
+.table td {
   color: black;
   background-color: white;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .table button {
   width: 100%;
   background-color: gray; /* Green */
-  border:none;
+  border: none;
   color: white;
   padding: 5px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-table;
-  font-size: 16px;
+  font-size: 14px;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
 
 .table button {
-  background-color: rgb(173, 33, 33); 
-  color: white; 
+  background-color: rgb(173, 33, 33);
+  color: white;
   border-block-width: initial;
 }
 .table button:hover {
   background-color: rgb(173, 33, 33);
   color: white;
 }
+
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	/* Force table to not be like tables anymore 
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) 
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+		/* Now like a table header 
+		position: absolute;
+		/* Top/left values mimic padding 
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		/* Label the data 
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}*/
+
+
   </style>
   <body>
    
@@ -359,81 +419,90 @@
           </div>
 
 
-    <!-- Footer >
+  
+    <!-- Footer >-->
     <footer id="footer" class="section">
-      <!-- container >
+      <!-- container >-->
       <div class="container">
-        <!-- row >
+        <!-- row >-->
         <div class="row">
-          <!-- footer logo -->
-          <div class="col-md-6">
-            <!--div class="footer-logo">
-              <a class="logo" href="index.html">
-                <img src="./img/logo.png" alt="logo" />
-              </a>
-            </div-->
-          </div>
-          <!-- footer logo -->
-
-          <!-- footer nav -->
-          <!--div class="col-md-6">
-            <ul class="footer-nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Domains</a></li>
-              <li><a href="blog.html">Resources</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <!-- /footer nav -->
+        <!-- footer logo -->
+        <div class="col-md-6">
+          <!--div class="footer-logo">
+          <a class="logo" href="index.html">
+            <img src="./img/logo.png" alt="logo" />
+          </a>
+          </div-->
+        </div>
+        <!-- footer logo -->
+    
+        <!-- footer nav -->
+        <div class="col-md-6">
+          <!--ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="blog.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </ul-->
+        </div>
+        <!-- /footer nav -->
         </div>
         <!-- /row -->
-
+    
         <!-- row -->
         <div id="bottom-footer" class="row">
-          <!-- social -->
-          <div class="col-md-4 col-md-push-8">
-            <ul class="footer-social">
-              <li>
-                <a href="https://www.facebook.com/nc.ncai" class="facebook"
-                  ><i class="fa fa-facebook"></i
-                ></a>
-              </li>
-
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UCOyh_A31fD4-hc9xijwS7oA"
-                  class="youtube"
-                  ><i class="fa fa-youtube"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/company/ned-nclab"
-                  class="linkedin"
-                  ><i class="fa fa-linkedin"></i
-                ></a>
-              </li>
-            </ul>
+        <!-- social -->
+        <div class="col-md-4 col-md-push-8">
+          <ul class="footer-social">
+          <li>
+            <a href="https://www.facebook.com/nc.ncai" class="facebook"
+            ><i class="fa fa-facebook"></i
+            ></a>
+          </li>
+    
+          <li>
+            <a
+            href="https://www.youtube.com/channel/UCOyh_A31fD4-hc9xijwS7oA"
+            class="youtube"
+            ><i class="fa fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a
+            href="https://www.linkedin.com/company/ned-nclab"
+            class="linkedin"
+            ><i class="fa fa-linkedin"></i
+            ></a>
+          </li>
+          </ul>
+        </div>
+        <!-- /social -->
+    
+             <!-- copyright -->
+        <div class="col-md-8 col-md-pull-4">
+          <div class="footer-copyright">
+            <span
+            >&copy;  All Rights Reserved, Neurocomputation Lab  <!--i class="fa fa-heart-o" aria-hidden="true"></i> by
+            <a href="https://colorlib.com">Colorlib</a></span
+            -->
           </div>
-          <!-- /social -->
-
-          <!-- copyright -->
-          <div class="col-md-8 col-md-pull-4">
-            <div class="footer-copyright">
-              <span
-                >&copy;  All Rights Reserved, Neurocomputation Lab  <!--i class="fa fa-heart-o" aria-hidden="true"></i> by
-                <a href="https://colorlib.com">Colorlib</a></span
-              >
-            </div>
           </div>
           <!-- /copyright -->
-        </div>
-        <!-- row -->
-      </div>
-      <!-- /container -->
-    </footer>
-    <!-- /Footer -->
-
-  </body>
-</html>
+            </div>
+            <!-- row -->
+          </div>
+          <!-- /container -->
+        </footer>
+        <!-- /Footer -->
+    
+        <!-- preloader -->
+        <div id="preloader"><div class="preloader"></div></div>
+        <!-- /preloader -->
+    
+        <!-- jQuery Plugins -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+      </body>
+    </html>

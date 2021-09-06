@@ -475,15 +475,16 @@ textarea:focus {
 	About & Why Us (Feature)
 \*------------------------------------*/
 /* -- Feature -- */
-.why {
+
+.feature {
   position: relative;
 }
 
-.why + .why {
+.feature + .feature {
   margin-top: 40px;
 }
 
-.why .why-icon {
+.feature .feature-icon {
   position: absolute;
   left: 0;
   top: 0;
@@ -497,33 +498,8 @@ textarea:focus {
   color: #c92f1a;
 }
 
-.why-content {
-  padding-left: 100px;
-}
-.feature {
-  position: relative;
-}
-
-.feature + .feature {
-  margin-top: 40px;
-}
-
-.feature .feature-icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  font-size: 30px;
-  border: 1px solid #ebebeb;
-  color: #c92f1a;
-}
-
 .feature-content {
-  padding-left: 0;
+  padding-left: 100px;
 }
 
 /* -- About Img -- */
@@ -532,7 +508,7 @@ textarea:focus {
 }
 
 .about-img > img {
-  width: 100%;
+  width: 80%;
 }
 
 /* -- About Video -- */
