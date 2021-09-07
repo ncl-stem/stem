@@ -255,7 +255,7 @@ textarea:focus {
 }
 
 .navbar-brand .logo > img {
-  max-height: 30px;
+  max-height: 38px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -504,7 +504,7 @@ textarea:focus {
 
 /* -- About Img -- */
 .about-img {
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .about-img > img {
